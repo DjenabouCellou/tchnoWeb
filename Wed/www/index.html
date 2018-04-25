@@ -19,6 +19,22 @@
 			</nav>
 		</header>
 
+		<span class="connexion">
+			<button	onclick="afficheF()">Connexion</button>
+		</span>
+
+		<div id="form" >
+			<form id="connexion" method="POST" action="../htbin/login.py">
+				<label class="login" >login :</label>
+				<input type="text" name="username" id="username"><br><br>
+				<label class="login" >Mot de passe :</label>
+				<input type="password" name="userpwd"  id="userpwd"><br><br>
+				<input type="button" value="valider" onclick="loadFile()"><br>
+			</form>
+		</div>
+
+		<span id="message"></span>
+		<span id="avertissement">ce site utilise javascript <button onclick="disparait()">OK</button></span>
 		<section>
 			<h1><b>Dégustez un authentique riz au gras sans bouger de chez soi MAINTENANT C'EST POSSIBLE!!!</b>
 	    </h1>
@@ -34,9 +50,16 @@
 	    <p>Les plats livrés sont conditionnés en parts individuelles et généreusement bien servie  dans des barquettes
 	       hermétiques et micro-ondables, pour vous garantir un maximum de saveur jusqu'à votre porte.
 	    </p>
-			<img src="image/rplet.jpg" alt="riz au poulet">
-	    <img src="image/rv.jpeg" alt="riz a la viande">
-	    <img src="image/rp.jpg" alt="riz au poisson">
+			<div id="flexing" >
+				<img class="image" src="image/rplet.jpg" alt="riz au poulet">
+	    	<img class="image" src="image/rv.jpeg" alt="riz a la viande">
+	    	<img class="image" src="image/rp.jpg" alt="riz au poisson">
+				<img class="image" src="image/a.jpg" alt="poisson">
+				<img class="image" src="image/atieke.jpg" alt="atcheke">
+				<img class="image" src="image/gimgimbre.jpg" alt="jus">
+
+			</div>
+
 		</section>
 
 
