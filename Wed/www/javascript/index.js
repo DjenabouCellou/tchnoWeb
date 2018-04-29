@@ -41,15 +41,24 @@ function carousel() {
   setTimeout(carousel, 3000); // Change image chaque 3 seconds
 }
 
+function disparait() {
 
-function disparait(){
-  document.getElementById("avertissement").style.display = 'none';
+	if (typeof this.compteur == 'undefined') {
+		this.compteur = 0;
+	}
+  if(this.compteur == 0) {
+    document.getElementById("avertissement").style.display = 'none';
+    this.compteur++;
+  }
 }
 
 
 //partie Ajax
 function afficheF(){
-  document.getElementById("form").style.display = 'block';
+  if(document.getElementById("form").style.display == 'none')
+    document.getElementById("form").style.display = 'block';
+  else
+    document.getElementById("form").style.display = 'none';
 }
 
 
