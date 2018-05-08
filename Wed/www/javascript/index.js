@@ -1,6 +1,10 @@
 var slideIndex = 1;
 var charge=0;
 
+var affich_button = document.getElementById("affich_button");
+
+affich_button.addEventListener("click", afficheF);
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -55,10 +59,11 @@ function disparait() {
 
 //partie Ajax
 function afficheF(){
-  if(document.getElementById("form").style.display == 'none')
-    document.getElementById("form").style.display = 'block';
+  var formulaire = document.getElementById("form");
+  if((formulaire.style.display == 'none') || (formulaire.style.display == ""))
+    formulaire.style.display = 'block';
   else
-    document.getElementById("form").style.display = 'none';
+    formulaire.style.display = 'none';
 }
 
 
