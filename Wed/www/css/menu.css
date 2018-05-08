@@ -29,3 +29,14 @@
   order: 2;
 }
 }
+
+
+tr, td{
+  border: 2px solid #FFFACD;
+
+  padding:5px;
+  text-align:left;
+}
+th{
+  border:1px dotted #FFFACD;
+}

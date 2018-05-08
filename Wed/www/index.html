@@ -48,17 +48,30 @@
 	    <p>Les plats livrés sont conditionnés en parts individuelles et généreusement bien servie  dans des barquettes
 	       hermétiques et micro-ondables, pour vous garantir un maximum de saveur jusqu'à votre porte.
 	    </p>
+
+
 			<div id="flexing" >
-				<img class="image" src="image/rplet.jpg" alt="riz au poulet">
-	    	<img class="image" src="image/rv.jpeg" alt="riz a la viande">
-	    	<img class="image" src="image/rp.jpg" alt="riz au poisson">
-				<img class="image" src="image/a.jpg" alt="poisson">
-				<img class="image" src="image/atieke.jpg" alt="atcheke">
-				<img class="image" src="image/gimgimbre.jpg" alt="jus">
+				<img class="image" src="image/rplet.jpg" alt="riz au poulet" onmouseover="lanceModal(0)">
+	    	<img class="image" src="image/rv.jpeg" alt="riz a la viande" onmouseover="lanceModal(1)">
+	    	<img class="image" src="image/rp.jpg" alt="riz au poisson" onmouseover="lanceModal(2)">
+				<img class="image" src="image/a.jpg" alt="poisson" onmouseover="lanceModal(3)">
+				<img class="image" src="image/atieke.jpg" alt="atcheke" onmouseover="lanceModal(4)">
+				<img class="image" src="image/gimgimbre.jpg" alt="jus" onmouseover="lanceModal(5)">
+
+				<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+				</div>
+
+
+
 
 			</div>
 
 		</section>
+
+
 		<noscript>
 			javascritp n'est pas activé
 		</noscript>
