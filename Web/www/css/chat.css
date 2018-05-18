@@ -1,0 +1,48 @@
+.corps {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.corps>* {
+  flex: 80%;
+}
+
+@media (min-width: 600px) {
+  .aside {
+    flex: 1 auto;
+  }
+}
+
+@media (min-width:8000px) {
+  .main {
+    flex: 1 0px;
+  }
+  .main {
+    order: 1
+  }
+  .footer {
+    order: 2;
+  }
+}
+
+#conversation {
+  width: 300px;
+  height: 400px;
+  background-color: rgba(142, 138, 134, 0.7);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+fieldset {
+  width: 330px;
+  background-color: rgba(142, 138, 134, 0.7);
+}
+
+#conversation>b {
+  color: rgba(142, 233, 150, 0.7);
+  font-size: 16px;
+}

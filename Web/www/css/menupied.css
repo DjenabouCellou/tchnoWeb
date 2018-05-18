@@ -1,0 +1,80 @@
+/* Rotation de 270 degrés pour Internet Explorer 7 et 8 */
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #FFFACD;
+  box-shadow: 0 .5em .25em -.25em rgba(0, 0, 0, 0.2);
+}
+
+.menu a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Grands écrans */
+
+.menu {
+  display: flex;
+  /* 1 */
+  flex-flow: row wrap;
+  /* 2 */
+  justify-content: center;
+  /* 3 */
+}
+
+/* écrans moyens */
+
+@media (max-width: 800px) {
+  .menu {
+    justify-content: center;
+    /* 4 */
+  }
+}
+
+/* petits écrans */
+
+@media (max-width: 450px) {
+  .menu {
+    flex-flow: column wrap;
+    /* 5 */
+  }
+}
+
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  background-color: #FFFACD;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.footer img {
+  border-radius: 80%;
+  width: 5%;
+  height: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: Sienna;
+}
+
+a:hover {
+  color: OrangeRed;
+}
+
+a:active {
+  color: rgba(227, 204, 183, 1);
+}
+
+a:visited {
+  color: Sienna;
+}

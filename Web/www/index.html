@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/menupied.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<meta charset="UTF-8">
+	<title>Africana & Delice</title>
+</head>
+
+<body class="corps">
+	<header class="header">
+		<h1>Bienvenue chez Africana</h1>
+		<nav>
+			<ul class="menu" role="menu">
+				<li><a href=#>Accueil</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="grillade.html">Grillade</a></li>
+				<li><a href="reservation.html">Reservation</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<span class="connexion">
+			<button	id="affich_button">Connexion</button>
+		</span>
+
+	<div id="form">
+		<form id="connexion" method="POST" action="../htbin/login.py">
+			<label class="login">login :</label>
+			<input type="text" name="username" id="username"><br><br>
+			<label class="login">Mot de passe :</label>
+			<input type="password" name="userpwd" id="userpwd"><br><br>
+			<input type="button" value="valider" onclick="loadFile()"><br>
+		</form>
+	</div>
+
+	<span id="message"></span>
+	<span id="avertissement">ce site utilise javascript <button onclick="disparait()">OK</button></span>
+
+	<section class="main">
+		<h2><b>Dégustez un authentique riz au gras sans bouger de chez soi MAINTENANT C'EST POSSIBLE!!!</b></h2>
+		<p>Découvrez le seul traiteur dans la région qui vous propose de vous faire découvrir ses spécialités et son savoir faire dans un service de livraison à domicile, retrouvez toute une gastronomie orientale dans vos assiettes sans bouger de chez vous et
+			ce tous les jours de 18H à Minuit .<br/> Consultez dés à présent notre carte des Menus une fois votre choix fait contactez nous au 07.83.86.74.94<br/>
+			<b>Paiement accepté:</b> Espèce, Carte bleu, Paypal.<br/> Nous livrons en général entre <b>45 & 60 minutes</b> selon l'affluence de nos commandes.
+		</p>
+		<p>Les plats livrés sont conditionnés en parts individuelles et généreusement bien servie dans des barquettes hermétiques et micro-ondables, pour vous garantir un maximum de saveur jusqu'à votre porte.
+		</p>
+
+
+		<div id="flexing">
+			<img class="image" src="image/rplet.jpg" alt="riz au poulet" onmouseover="lanceModal(0)">
+			<img class="image" src="image/rv.jpeg" alt="riz a la viande" onmouseover="lanceModal(1)">
+			<img class="image" src="image/rp.jpg" alt="riz au poisson" onmouseover="lanceModal(2)">
+			<img class="image" src="image/a.jpg" alt="poisson" onmouseover="lanceModal(3)">
+			<img class="image" src="image/atieke.jpg" alt="atcheke" onmouseover="lanceModal(4)">
+			<img class="image" src="image/gimgimbre.jpg" alt="jus" onmouseover="lanceModal(5)">
+
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01" alt="image-modal" src=".">
+				<div id="caption"></div>
+			</div>
+
+
+
+
+		</div>
+
+	</section>
+
+
+	<noscript>
+			javascritp n'est pas activé
+		</noscript>
+
+
+	<footer class="footer">
+		Diallo Djenabou Cellou <img src="image/djenabou.jpg" alt="djenabou" /><br> Diallo Abdoul Gadiri <img src="image/gadiri.jpg" alt="gadiri" /><br><br>
+		<strong> L2 informatique  </strong>
+		<a href="https://twitter.com"><img src="image/icone-twitter.png" alt="twitter"></a>
+		<a href="https://facebook.com"><img src="image/icone-facebook.png" alt="facebook"></a>
+	</footer>
+	<script src="javascript/index.js"></script>
+</body>
+
+</html>
