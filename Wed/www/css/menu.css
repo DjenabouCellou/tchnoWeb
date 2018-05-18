@@ -5,38 +5,34 @@
   flex-flow: row wrap;
 }
 
-.corps > *{
+.corps>* {
   flex: 80%;
 }
 
-@media (min-width: 600px){
+@media (min-width: 600px) {
   .aside {
     flex: 1 auto;
   }
 }
 
-@media (min-width:8000px){
-  .main{
+@media (min-width:8000px) {
+  .main {
     flex: 1 0px;
   }
-
-
-.main {
-  order: 1
+  .main {
+    order: 1
+  }
+  .footer {
+    order: 2;
+  }
 }
 
-.footer{
-  order: 2;
-}
-}
-
-
-tr, td{
+tr, td {
   border: 2px solid #FFFACD;
-
-  padding:5px;
-  text-align:left;
+  padding: 5px;
+  text-align: left;
 }
-th{
-  border:1px dotted #FFFACD;
+
+th {
+  border: 1px dotted #FFFACD;
 }

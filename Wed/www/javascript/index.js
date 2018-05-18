@@ -1,5 +1,5 @@
 var slideIndex = 1;
-var charge=0;
+var charge = 0;
 
 var affich_button = document.getElementById("affich_button");
 
@@ -17,16 +17,20 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
 
 var myIndex = 0;
@@ -40,17 +44,19 @@ function carousel() {
   }
   myIndex++;
   currentSlide(myIndex);
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
+  if (myIndex > x.length) {
+    myIndex = 1
+  }
+  x[myIndex - 1].style.display = "block";
   setTimeout(carousel, 3000); // Change image chaque 3 seconds
 }
 
 function disparait() {
 
-	if (typeof this.compteur == 'undefined') {
-		this.compteur = 0;
-	}
-  if(this.compteur == 0) {
+  if (typeof this.compteur == 'undefined') {
+    this.compteur = 0;
+  }
+  if (this.compteur == 0) {
     document.getElementById("avertissement").style.display = 'none';
     this.compteur++;
   }
@@ -58,9 +64,9 @@ function disparait() {
 
 
 //partie Ajax
-function afficheF(){
+function afficheF() {
   var formulaire = document.getElementById("form");
-  if((formulaire.style.display == 'none') || (formulaire.style.display == ""))
+  if ((formulaire.style.display == 'none') || (formulaire.style.display == ""))
     formulaire.style.display = 'block';
   else
     formulaire.style.display = 'none';
@@ -80,12 +86,11 @@ function loadFile() {
     if (xhr.readyState == 4 && xhr.status == 200) { // Si le fichier est chargé sans erreur
       document.getElementById("message").innerHTML = '<span>' + xhr.responseText + '</span>'; // Et on affiche !
 
-    }
-    else {
+    } else {
       document.getElementById("message").innerHTML = '<span>' + xhr.responseText + '</span>';
     }
   });
-  xhr.open("GET", "../htbin/login.py?username="+sVar1+"&userpwd=" + sVar2);
+  xhr.open("GET", "../htbin/login.py?username=" + sVar1 + "&userpwd=" + sVar2);
 
   xhr.send(null); // La requête est prête, on envoie tout !
 
@@ -101,17 +106,17 @@ function lanceModal(elem) {
   var img = document.getElementsByClassName('image')[elem];
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
-          img.onclick = function(){
-          modal.style.display = "block";
-          modalImg.src = this.src;
-          captionText.innerHTML = this.alt;
-      }
-
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-          modal.style.display = "none";
-    }
+  img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
   }
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+}
