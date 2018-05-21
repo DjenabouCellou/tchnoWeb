@@ -78,13 +78,6 @@ input:focus {
   }
 }
 
-img {
-  border: 3px solid rgb(100, 73, 36);
-  box-shadow: 8px 8px 40px black;
-  margin: auto;
-  vertical-align: center;
-}
-
 #flexing {
   width: 80%;
   margin: auto;
@@ -102,6 +95,10 @@ img {
   height: 200px;
   cursor: pointer;
   transition: 0.3s;
+  border: 3px solid rgb(100, 73, 36);
+  box-shadow: 8px 8px 40px black;
+  margin: auto;
+  vertical-align: center;
 }
 
 .image:hover {
@@ -219,4 +216,76 @@ img {
   .modal-content {
     width: 100%;
   }
+}
+
+.imag {
+  cursor: pointer;
+  display: block !important;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  -ms-filter: alpha(opacity=0);
+  -khtml-opacity: 0;
+  opacity: 1;
+  background-color: #005067;
+  width: 100px;
+  height: 100px;
+  border-radius: 150px;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  box-shadow: 1px 1px 5px 0 rgba(50, 50, 50, .75);
+  position: relative;
+  right: -8px;
+  bottom: 17px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  animation: bounce 0.55s ease infinite alternate;
+  animation-iteration-count: 8;
+  transition: .3s;
+}
+
+.imag:hover {
+  transform: scale(1.5);
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+@-moz-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+@-o-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+.presentation {
+  width: 80%;
+  margin: 0 auto;
 }
