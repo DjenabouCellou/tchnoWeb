@@ -2,9 +2,33 @@
 http://www.omaquis.com/index.php
 */
 
-.main {
+.corps {
   width: 80%;
-  margin: 0 auto;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.corps>* {
+  flex: 80%;
+}
+
+@media (min-width: 600px) {
+  .aside {
+    flex: 1 auto;
+  }
+}
+
+@media (min-width:8000px) {
+  .main {
+    flex: 1 0px;
+  }
+  .main {
+    order: 1
+  }
+  .footer {
+    order: 2;
+  }
 }
 
 #myVideo {
@@ -22,6 +46,11 @@ http://www.omaquis.com/index.php
 }
 
 .vid {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.presentation {
   width: 80%;
   margin: 0 auto;
 }
