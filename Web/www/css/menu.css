@@ -36,3 +36,28 @@ tr, td {
 th {
   border: 1px dotted #FFFACD;
 }
+
+figure {
+  float: right;
+  position: relative;
+  margin-top: -225px;
+  width: 60%;
+  height: 800px;
+  padding: 50px;
+  text-align: center;
+}
+
+figcaption {
+  float: none;
+  color: #191970;
+}
+
+.remonter {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 5px;
+  float: right;
+  background-color: #CCC;
+  opacity: 0.7;
+}

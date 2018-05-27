@@ -10,3 +10,13 @@ http://www.omaquis.com/index.php
 #myVideo {
   width: 80%;
 }
+
+.remonter {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 5px;
+  float: right;
+  background-color: #CCC;
+  opacity: 0.7;
+}
