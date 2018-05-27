@@ -8,7 +8,7 @@ http://www.omaquis.com/index.php
 }
 
 #myVideo {
-  width: 80%;
+  width: 100%;
 }
 
 .remonter {
@@ -19,4 +19,9 @@ http://www.omaquis.com/index.php
   float: right;
   background-color: #CCC;
   opacity: 0.7;
+}
+
+.vid {
+  width: 80%;
+  margin: 0 auto;
 }
