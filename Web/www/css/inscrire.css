@@ -60,6 +60,7 @@ input:focus {
 .corps {
   width: 80%;
   margin: auto;
+  padding-left: 40px;
   flex-flow: row wrap;
   background-image: url("../image/fond.jpg");
   background-attachment: fixed;

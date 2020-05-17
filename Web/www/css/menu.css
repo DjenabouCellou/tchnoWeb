@@ -31,6 +31,7 @@ tr, td {
   border: 2px solid #FFFACD;
   padding: 5px;
   text-align: left;
+  color: rgb(48, 48, 43);
 }
 
 th {
@@ -64,4 +65,8 @@ figcaption {
 .presentation {
   width: 80%;
   margin: 0 auto;
+}
+
+li {
+  color: rgb(48, 48, 43);
 }

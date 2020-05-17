@@ -34,7 +34,7 @@ function showSlides(n) {
 }
 
 var myIndex = 0;
-carousel();
+// carousel();
 
 function carousel() {
   var i;
@@ -120,3 +120,4 @@ function lanceModal(elem) {
     modal.style.display = "none";
   }
 }
+

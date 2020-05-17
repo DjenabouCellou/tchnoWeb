@@ -19,12 +19,13 @@
 				<li><a href="grillade.html">Grillade</a></li>
 				<li><a href="inscrire.html">s'inscrire</a></li>
 			</ul>
+			<button class="button" id="affich_button">Connexion</button>
 		</nav>
 	</header>
 
-	<span class="connexion">
+	<!--<span class="connexion">
 			<button	id="affich_button">Connexion</button>
-		</span>
+		</span>-->
 
 	<div id="form">
 		<form id="connexion" method="POST" action="../htbin/login.py">
@@ -32,7 +33,7 @@
 			<input type="text" name="username" id="username"><br><br>
 			<label class="login">Mot de passe :</label>
 			<input type="password" name="userpwd" id="userpwd"><br><br>
-			<input type="button" value="valider" onclick="loadFile()"><br>
+			<input type="button" value="valider" class="input-button" onclick="loadFile()"><br>
 		</form>
 	</div>
 
@@ -41,10 +42,10 @@
 
 	<section class="main">
 		<div class="presentation">
-			<h2><b>Dégustez un authentique riz au gras sans bouger de chez soi MAINTENANT C'EST POSSIBLE!!!</b></h2>
+			<h2><b>Dégustez une spécialitée Africaine depuis chez vous</b></h2>
 			<p>Découvrez le seul traiteur dans la région qui vous propose de vous faire découvrir ses spécialités et son savoir faire dans un service de livraison à domicile, retrouvez toute une gastronomie orientale dans vos assiettes sans bouger de chez vous et
 				ce tous les jours de 18H à Minuit .<br/> Consultez dés à présent notre carte des Menus une fois votre choix fait contactez nous au 07.83.86.74.94<br/>
-				<b>Paiement accepté:</b> Espèce, Carte bleu, Paypal.<br/> Nous livrons en général entre <b>45 & 60 minutes</b> selon l'affluence de nos commandes.
+				<b class="gras">Paiement accepté:</b> Espèce, Carte bleu, Paypal.<br/> Nous livrons en général entre <b class="gras">45 & 60 minutes</b> selon l'affluence de nos commandes.
 			</p>
 			<p>Les plats livrés sont conditionnés en parts individuelles et généreusement bien servie dans des barquettes hermétiques et micro-ondables, pour vous garantir un maximum de saveur jusqu'à votre porte.
 
@@ -72,11 +73,11 @@
 
 		</div>
 		<div>
-			<a href="chat.html"><img src="../image/chat.jpg" class="imag" alt="image lien chat" title="allez tchatter"/></a>
+			<a href="chat.html"><img src="../image/comments-regular.svg" class="imag" alt="image lien chat" title="allez tchatter"/></a>
 		</div>
 	</section>
 
-	<a href="#ancreMenu"><img src="image/remonter.png" class="remonter"></a>
+	<span onclick="topFunction()" ><img id="toTop" src="image/angle-up-solid.svg"></span>
 
 	<noscript>
 			javascritp n'est pas activé, veuillez l'activer pour une utilisation optimale
@@ -84,12 +85,13 @@
 
 
 	<footer class="footer">
-		Diallo Djenabou Cellou <img src="image/djenabou.jpg" alt="djenabou" /><br> Diallo Abdoul Gadiri <img src="image/gadiri.jpg" alt="gadiri" /><br><br>
+		Diallo Djenabou Cellou <br> Cissé Demba <br><br>
 		<strong> L2 informatique  </strong>
-		<a href="https://twitter.com"><img src="image/icone-twitter.png" alt="twitter"></a>
+		<a href="https://twitter.com"><img src="image/twitter.webp" alt="twitter"></a>
 		<a href="https://facebook.com"><img src="image/icone-facebook.png" alt="facebook"></a>
 	</footer>
 	<script src="javascript/index.js"></script>
+	<script src="javascript/base.js"></script>
 </body>
 
 </html>

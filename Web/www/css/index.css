@@ -17,17 +17,18 @@ button {
 }
 
 .connexion {
-  color: blue;
+  color: rgb(231, 95, 95);
 }
 
 #form {
   display: none;
   margin-top: 2em;
+  text-align: right;
 }
 
 #message {
   position: absolute;
-  color: blue;
+  color: rgb(211, 59, 59);
   top: 13%;
   right: 25%;
   font-size: 30px;
@@ -81,23 +82,28 @@ input:focus {
 #flexing {
   width: 80%;
   margin: auto;
+  padding: 3px;
   display: flex;
   justify-content: space-between;
+  align-items: space-between;
   flex-wrap: wrap;
   /*=========*/
-  border: 3px solid rgb(100, 73, 36);
-  box-shadow: 8px 8px 40px black;
+  /* border: 3px solid rgb(100, 73, 36); */
   font-size: 20px;
 }
 
 .image {
-  width: 250px;
-  height: 200px;
+  width: 330px;
+  height: 250px;
   cursor: pointer;
   transition: 0.3s;
   border: 3px solid rgb(100, 73, 36);
-  box-shadow: 8px 8px 40px black;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 1px 20px 2px rgba(0,0,0,0.43);
+  -moz-box-shadow: 2px 1px 20px 2px rgba(0,0,0,0.43);
+  box-shadow: 2px 1px 20px 2px rgba(0,0,0,0.43);
   margin: auto;
+  margin-top: 15px;
   vertical-align: center;
 }
 
@@ -227,10 +233,11 @@ input:focus {
   -ms-filter: alpha(opacity=0);
   -khtml-opacity: 0;
   opacity: 1;
-  background-color: #005067;
-  width: 100px;
-  height: 100px;
-  border-radius: 150px;
+  background-color: #ccc;
+  width: 55px;
+  height: 55px;
+  padding: 4px;
+  border-radius: 130px;
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
   box-shadow: 1px 1px 5px 0 rgba(50, 50, 50, .75);
@@ -290,12 +297,12 @@ input:focus {
   margin: 0 auto;
 }
 
-.remonter {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  margin: 5px;
-  float: right;
-  background-color: #CCC;
-  opacity: 0.7;
+p {
+  color: rgb(48, 48, 43); 
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.gras {
+  color: #4a5e61;
 }

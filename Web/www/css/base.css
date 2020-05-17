@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-image: url("../image/imb.jpg");
+  background-image: url("../image/bg.jpg");
   /*
   background: -webkit-linear-gradient(to bottom right, rgba(209, 204, 202, 1), rgba(110, 173, 211, 0.6));
   background: -o-linear-gradient(to bottom right, rgba(209, 204, 202, 1), rgba(110, 173, 211, 0.6));
@@ -30,19 +30,23 @@ p, ul, ol, dl, blockquote, pre, td, th, label, textarea, caption, details, figur
 }
 
 h1, .h1-like {
-  font-size: 1.8571em;
+  font-size: 2.1em;
   /* equiv 26px */
   font-weight: normal;
   line-height: 1.6154em;
   margin: .8077em 0 0 0;
+  color: #4a5e61;
 }
 
 h2, .h2-like {
-  font-size: 1.7143em;
+  font-size: 2em;
   /* equiv 24px */
   font-weight: normal;
   line-height: 1.75em;
   margin: .875em 0 0 0;
+  color: #4a5e61;
+  text-align: center;
+  font-style: italic;
 }
 
 h3, .h3-like {
@@ -283,8 +287,47 @@ table td, table th {
   /* Valeur par défaut: "middle" */
 }
 
-/* Conteneurs sémantiques de HTML 5 */
+#toTop {
+  display: none;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  margin: 5px;
+  float: right;
+  background-color: #CCC;
+  z-index: 99;
+  bottom: 20px;
+  right: 30px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #FFFACD;
+}
 
-article, aside, dialog, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
+.button {
+  background-color: Sienna;
+  border: none;
+  color: #FFFACD;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 2px;
+  cursor: pointer;
+}
+
+.input-button {
+  background-color: Sienna;
+  border: none;
+  color: #FFFACD;
+  border-radius: 5px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 2px;
+  cursor: pointer;
 }
