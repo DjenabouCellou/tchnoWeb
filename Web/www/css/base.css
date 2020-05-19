@@ -45,7 +45,6 @@ h2, .h2-like {
   line-height: 1.75em;
   margin: .875em 0 0 0;
   color: #4a5e61;
-  text-align: center;
   font-style: italic;
 }
 
@@ -55,6 +54,7 @@ h3, .h3-like {
   font-weight: normal;
   line-height: 1.909em;
   margin: .9545em 0 0 0;
+  color: #4a5e61;
 }
 
 h4, .h4-like {
@@ -330,4 +330,55 @@ table td, table th {
   font-size: 16px;
   margin: 5px 2px;
   cursor: pointer;
+}
+
+/* toast */
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #4a5e61;;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+#toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout o.5s 2.5s;
+}
+
+@-webkit-keyframes fadein  {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+/* afficher formulaire */
+#form {
+  display: none;
+  margin-top: 2em;
+  text-align: right;
 }

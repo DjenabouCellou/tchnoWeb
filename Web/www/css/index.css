@@ -20,12 +20,6 @@ button {
   color: rgb(231, 95, 95);
 }
 
-#form {
-  display: none;
-  margin-top: 2em;
-  text-align: right;
-}
-
 #message {
   position: absolute;
   color: rgb(211, 59, 59);
@@ -305,4 +299,8 @@ p {
 
 .gras {
   color: #4a5e61;
+}
+
+h2, h3 {
+  text-align: center;
 }

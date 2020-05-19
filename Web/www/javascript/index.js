@@ -1,9 +1,7 @@
 var slideIndex = 1;
 var charge = 0;
 
-var affich_button = document.getElementById("affich_button");
 
-affich_button.addEventListener("click", afficheF);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -51,26 +49,7 @@ function carousel() {
   setTimeout(carousel, 3000); // Change image chaque 3 seconds
 }
 
-function disparait() {
-
-  if (typeof this.compteur == 'undefined') {
-    this.compteur = 0;
-  }
-  if (this.compteur == 0) {
-    document.getElementById("avertissement").style.display = 'none';
-    this.compteur++;
-  }
-}
-
-
 //partie Ajax
-function afficheF() {
-  var formulaire = document.getElementById("form");
-  if ((formulaire.style.display == 'none') || (formulaire.style.display == ""))
-    formulaire.style.display = 'block';
-  else
-    formulaire.style.display = 'none';
-}
 
 
 function loadFile() {
